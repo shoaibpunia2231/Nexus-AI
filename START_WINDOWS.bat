@@ -90,7 +90,7 @@ REM Write tiny helper bat files so start has no nested-quote issues
 (
   echo @echo off
   echo cd /d "%BACKEND%"
-  echo %PYTHON% -m uvicorn main:app --reload --port 8000
+  echo %PYTHON% -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ) > "%ROOT%_backend_run.bat"
 
 (
