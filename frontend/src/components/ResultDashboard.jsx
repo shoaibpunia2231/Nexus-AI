@@ -4,7 +4,7 @@ import FeatureImportanceChart from "./FeatureImportanceChart";
 import ModelMetrics from "./ModelMetrics";
 import BloodVisualizer from "./BloodVisualizer";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+import { API_URL } from "../apiConfig";
 
 const RISK_CONFIG = {
   Low: {
