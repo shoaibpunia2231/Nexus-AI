@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+*.egg
+
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# Environment
+.env
+*.env
+
+# Dataset
+ml/data/*.csv
+
+# ML outputs (keep models, ignore large charts if needed)
+ml/outputs/*.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+
+# Local SQLite databases & scratch
+*.db
+scratch/
