@@ -338,4 +338,5 @@ python train_model.py
 
 This project is intended for **educational and research purposes** as an AI-assisted screening and decision-support system.
 
-It is **not a clinically validated diagnostic tool** and should not replace professional medical evaluation, laboratory confirmation, or medical advice.
+It is **not a clinically validated diagnostic tool** and should not replace professional medical evaluation, laboratory confirmation, or medical advice.#   N e x u s - A I  
+ 
