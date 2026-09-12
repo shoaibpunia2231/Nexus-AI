@@ -98,7 +98,7 @@ export default function SignUpPage({ onNavigate, onAuthSuccess }) {
                 <input
                   type="text"
                   required
-                  placeholder="Dr. Rajesh Gupta"
+                  placeholder="Enter your name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="auth-input"
@@ -111,7 +111,7 @@ export default function SignUpPage({ onNavigate, onAuthSuccess }) {
                 <input
                   type="email"
                   required
-                  placeholder="rajesh@clinic.org"
+                  placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="auth-input"
