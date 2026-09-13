@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/nexus_ai_logo_peach.png";
 
 export default function LandingPage({ onNavigate }) {
   const scrollToSection = (id) => {
@@ -13,10 +14,7 @@ export default function LandingPage({ onNavigate }) {
         <div className="landing-nav-inner">
           <div className="landing-brand" onClick={() => onNavigate("LANDING")}>
             <div className="brand-logo-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93" stroke="var(--accent-red)"/>
-                <circle cx="12" cy="12" r="4" fill="var(--accent-red)"/>
-              </svg>
+              <img src={logo} alt="Nexus AI" style={{ width: 32, height: 32, objectFit: "contain" }} />
             </div>
             <span className="brand-title">Nexus AI</span>
           </div>

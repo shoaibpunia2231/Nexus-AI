@@ -1,4 +1,5 @@
 import { useTheme } from "../App";
+import logo from "../assets/nexus_ai_logo_peach.png";
 
 export default function Header({ authSession, onSignOut, onOpenHistory, onNavigate }) {
   const { theme, toggleTheme } = useTheme();
@@ -8,12 +9,7 @@ export default function Header({ authSession, onSignOut, onOpenHistory, onNaviga
       <div className="header-inner">
         <div className="header-brand" onClick={() => onNavigate && onNavigate(authSession ? "APP" : "LANDING")} style={{ cursor: "pointer" }}>
           <div className="brand-icon">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-              <circle cx="13" cy="13" r="11" stroke="var(--accent-red)" strokeWidth="2"/>
-              <path d="M13 6v7l3.5 3.5" stroke="var(--accent-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="13" cy="13" r="2" fill="var(--accent-red)"/>
-              <circle cx="13" cy="13" r="5" stroke="var(--accent-red)" strokeWidth="1" strokeOpacity="0.3"/>
-            </svg>
+            <img src={logo} alt="Nexus AI" style={{ width: 40, height: 40, objectFit: "contain" }} />
           </div>
           <div>
             <span className="brand-name">Nexus AI</span>

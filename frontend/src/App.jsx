@@ -37,8 +37,7 @@ export default function App() {
   const [extractionData, setExtractionData] = useState(null);
   const [answers, setAnswers] = useState(null);
   const [result, setResult] = useState(null);
-  const [theme, setTheme] = useState(() => localStorage.getItem("dg-theme") || "dark");
-  const [predicting, setPredicting] = useState(false);
+const [theme, setTheme] = useState(() => localStorage.getItem("dg-theme") || "light");  const [predicting, setPredicting] = useState(false);
   const [predictionError, setPredictionError] = useState("");
 
   // Theme Sync
